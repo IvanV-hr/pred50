@@ -1,3 +1,5 @@
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 import KatalogSekcija from "./components/KatalogSekcija";
 import PopisGradova from "./components/PopisGradova";
 
@@ -20,11 +22,14 @@ function App() {
 
   return (
     <>
+      <Header naslov="Katalog" />
       <main>
+        <h1>Prva React aplikacija</h1>
         <PopisGradova naslov="Hrvatski gradovi" gradovi={gradovi} />
         <PopisGradova naslov="Americki gradovi" gradovi={americkiGradovi} />
         <KatalogSekcija />
       </main>
+      <Footer naslov="Katalog" />
     </>
   );
 }
